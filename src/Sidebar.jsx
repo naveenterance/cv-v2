@@ -1,20 +1,26 @@
 import React, { Component, useState } from "react";
 import "animate.css";
+import tab from
 
 const Sidebar = () => {
-  const [view, setview] = useState(true);
+  const [view, setview] = useState(false);
   const changeview = () => {
     view ? setview(false) : setview(true);
   };
-
+  const profiletab = () => {
+    setTab("Profile");
+  };
+  const contenttab = () => {
+    setTab("Content");
+  };
   return (
     <>
-      <div className="lg:absolute top-4 left-4  bg-gray-300 lg:shadow-lg lg:shadow-purple-500/50 lg:rounded-full sm:z-80  ">
+      <div className=" sticky top-8   w-max p-1 m-auto shadow-lg  bg-gray-300 shadow-gray-500 rounded-lg ">
         {view ? (
           <>
             <div
               onClick={changeview}
-              className="  animate__animated animate__flipInY relative m-2  rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600"
+              className=" focus:ring focus:outline-none animate__animated animate__flipInY relative m-2  rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600"
             >
               <img
                 className="m-auto "
@@ -30,7 +36,7 @@ const Sidebar = () => {
             <div>
               <div
                 onClick={changeview}
-                className="relative m-2 animate__animated animate__flipInY  rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600"
+                className="relative m-2 animate__animated animate__flipInY  rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300  w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600"
               >
                 <img
                   className="m-auto"
@@ -41,7 +47,7 @@ const Sidebar = () => {
                 />
               </div>
 
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600">
                 <img
                   data-tooltip-target="tooltip-profile"
                   data-tooltip-style="light"
@@ -57,11 +63,14 @@ const Sidebar = () => {
                   role="tooltip"
                   className="absolute invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
                 >
-                  Profile
+                  Profileddd
                   <div className="tooltip-arrow" data-popper-arrow></div>
                 </div>
               </div>
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div
+                onClick={contenttab}
+                className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600"
+              >
                 <img
                   data-tooltip-target="tooltip-portfolio"
                   data-tooltip-style="light"
@@ -81,7 +90,7 @@ const Sidebar = () => {
                   <div className="tooltip-arrow" data-popper-arrow></div>
                 </div>
               </div>
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600">
                 <img
                   data-tooltip-target="tooltip-github"
                   data-tooltip-style="light"
@@ -101,7 +110,7 @@ const Sidebar = () => {
                   <div className="tooltip-arrow" data-popper-arrow></div>
                 </div>
               </div>
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600">
                 <img
                   className="m-auto"
                   width="40"
@@ -110,7 +119,7 @@ const Sidebar = () => {
                   alt="linkedin"
                 />
               </div>
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600">
                 <img
                   className="m-auto"
                   width="40"
@@ -119,7 +128,7 @@ const Sidebar = () => {
                   alt="day-and-night"
                 />
               </div>
-              <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg w-16 h-16 bg-clip-border border-4 hover:border-cyan-600">
+              <div className="relative m-2 animate__animated animate__fadeInDown rounded-lg flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-cyan-600">
                 <img
                   className="m-auto"
                   width="40"

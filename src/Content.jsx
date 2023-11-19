@@ -3,142 +3,77 @@ import React, { useState, useEffect } from "react";
 const Content = () => {
   return (
     <>
-      <div className="col-span-10 shadow-lg shadow-gray-500/50 my-4 rounded-lg p-2">
-        <div
-          id="default-carousel"
-          className="relative w-full"
-          data-carousel="slide"
-        >
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://picsum.photos/200/300"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
+      <section className="z-10">
+        <div className="max-w-screen-xl px-4 py-4 mx-auto my-0 sm:px-6 sm:py-12 lg:px-8">
+          <header className="text-center">
+            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
+              New Collection
+            </h2>
+          </header>
 
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://picsum.photos/200/300"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://picsum.photos/200/300"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://picsum.photos/200/300"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div className="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="https://picsum.photos/200/300"
-                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-          </div>
-
-          <div className="absolute z-10 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="w-3 h-3 rounded-full"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              className="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              className="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              className="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-            <button
-              type="button"
-              className="w-3 h-3 rounded-full"
-              aria-current="false"
-              aria-label="Slide 5"
-              data-carousel-slide-to="4"
-            ></button>
-          </div>
-
-          <button
-            type="button"
-            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg
-                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 1 1 5l4 4"
+          <ul className="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
+            <li>
+              <a href="#" className="relative block group">
+                <img
+                  src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt=""
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
                 />
-              </svg>
-              <span className="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg
-                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="m1 9 4-4-4-4"
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Casual Trainers
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" className="relative block group">
+                <img
+                  src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  alt=""
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
                 />
-              </svg>
-              <span className="sr-only">Next</span>
-            </span>
-          </button>
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Winter Jumpers
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+
+            <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+              <a href="#" className="relative block group">
+                <img
+                  src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                  alt=""
+                  className="object-cover w-full transition duration-500 aspect-square group-hover:opacity-90"
+                />
+
+                <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
+                  <h3 className="text-xl font-medium text-white">
+                    Skinny Jeans Blue
+                  </h3>
+
+                  <span className="mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                    Shop Now
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     </>
   );
 };

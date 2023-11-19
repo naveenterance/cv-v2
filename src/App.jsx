@@ -10,10 +10,8 @@ function App() {
 
   return (
     <>
-      <div className="grid grid-cols-12 gap-1">
-        <Sidebar />
-        <Content />
-      </div>
+      <Sidebar />
+      <Content />
     </>
   );
 }

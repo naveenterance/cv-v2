@@ -5,96 +5,96 @@ import "animate.css";
 const Content = () => {
   return (
     <>
-      <div class="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-4">
         <div className="col-span-10">
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="grid gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
                   alt=""
                 />
               </div>
             </div>
-            <div class="grid gap-4">
+            <div className="grid gap-4">
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <img
-                  class="h-auto max-w-full rounded-lg"
+                  className="h-auto max-w-full rounded-lg"
                   src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
                   alt=""
                 />
@@ -102,105 +102,80 @@ const Content = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2">
-          <div className="   w-max p-auto m-auto shadow-lg  bg-gray-300 shadow-gray-500 rounded-lg ">
-            <div className="relative m-2 animate__animated animate__flipInY  rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300  w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/tiny-color/48/cancel.png"
-                alt="multiply"
-              />
-            </div>
-
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                data-tooltip-target="tooltip-profile"
-                data-tooltip-style="light"
-                data-tooltip-placement="right"
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://avatars.githubusercontent.com/u/87982480?v=4"
-                alt=""
-              />
-              <div
-                id="tooltip-profile"
-                role="tooltip"
-                className="absolute invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
-              >
-                Profileddd
-                <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
-            </div>
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                data-tooltip-target="tooltip-portfolio"
-                data-tooltip-style="light"
-                data-tooltip-placement="right"
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/isometric/50/briefcase.png"
-                alt="briefcase"
-              />
-              <div
-                id="tooltip-portfolio"
-                role="tooltip"
-                className="absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
-              >
-                Portfolio
-                <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
-            </div>
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                data-tooltip-target="tooltip-github"
-                data-tooltip-style="light"
-                data-tooltip-placement="right"
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/color/48/github--v1.png"
-                alt="info"
-              />
-              <div
-                id="tooltip-github"
-                role="tooltip"
-                className="absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
-              >
-                Github
-                <div className="tooltip-arrow" data-popper-arrow></div>
-              </div>
-            </div>
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/color/48/linkedin.png"
-                alt="linkedin"
-              />
-            </div>
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/fluency/48/day-and-night.png"
-                alt="day-and-night"
-              />
-            </div>
-            <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-              <img
-                className="m-auto"
-                width="40"
-                height="40"
-                src="https://img.icons8.com/office/40/apple-contacts.png"
-                alt="apple-contacts"
-              />
-            </div>
+        <div className="col-span-2 animate__animated animate__fadeInRight ">
+          <div className=" sticky top-0 my-4  w-max p-auto m-auto shadow-lg  bg-gray-300 shadow-gray-500 rounded-lg ">
+            <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg   ">
+              <h3 className="mb-4  bg-gray-300 font-semibold text-white ">
+                Technology
+              </h3>
+              <li className="w-full border-b border-gray-200 rounded-t-lg ">
+                <div className="flex items-center ps-3">
+                  <input
+                    id="vue-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2  "
+                  />
+                  <label
+                    for="vue-checkbox"
+                    className="w-full py-3 ms-2 text-sm font-medium text-gray-900 "
+                  >
+                    Vue JS
+                  </label>
+                </div>
+              </li>
+              <li className="w-full border-b border-gray-200 rounded-t-lg ">
+                <div className="flex items-center ps-3">
+                  <input
+                    id="react-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2  "
+                  />
+                  <label
+                    for="react-checkbox"
+                    className="w-full py-3 ms-2 text-sm font-medium text-gray-900 "
+                  >
+                    React
+                  </label>
+                </div>
+              </li>
+              <h3 className="mb-4  bg-gray-300 font-semibold text-white ">
+                Technology
+              </h3>
+              <li className="w-full border-b border-gray-200 rounded-t-lg ">
+                <div className="flex items-center ps-3">
+                  <input
+                    id="angular-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2  "
+                  />
+                  <label
+                    for="angular-checkbox"
+                    className="w-full py-3 ms-2 text-sm font-medium text-gray-900 "
+                  >
+                    Angular
+                  </label>
+                </div>
+              </li>
+              <li className="w-full border-b border-gray-200 rounded-t-lg ">
+                <div className="flex items-center ps-3">
+                  <input
+                    id="laravel-checkbox"
+                    type="checkbox"
+                    value=""
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500  dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2  "
+                  />
+                  <label
+                    for="laravel-checkbox"
+                    className="w-full py-3 ms-2 text-sm font-medium text-gray-900 "
+                  >
+                    Laravel
+                  </label>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

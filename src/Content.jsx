@@ -1,109 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import "animate.css";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Content = () => {
   return (
     <>
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="grid gap-4">
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="h-auto max-w-full rounded-lg"
-                  src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-span-2 animate__animated animate__fadeInRight ">
-          <div className=" sticky top-0 my-4  w-max p-auto m-auto shadow-lg  bg-gray-300 shadow-gray-500 rounded-lg ">
+      <div className="grid grid-cols-12 gap-1 animate__animated animate__fadeIn">
+        <div className="col-span-2  ">
+          <div className=" sticky top-12  w-max py-4 m-auto animate__animated animate__fadeInLeft ">
             <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg   ">
               <h3 className="mb-4  bg-gray-300 font-semibold text-white ">
                 Technology
@@ -177,6 +82,69 @@ const Content = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="col-span-8">
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            <Masonry
+              className="m-4 animate__animated animate__fadeInUp"
+              gutter="10px"
+            >
+              <img
+                className="     hover:scale-110"
+                src="https://naveenterance.github.io/cv-old/images/pdo.jpg"
+                alt=""
+              />
+              <img className="  hover:scale-110 " src="pokemon.jpg" alt="" />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/code.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110"
+                src="https://naveenterance.github.io/cv-old/images/django.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/threshold.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/Timed_form.jpg"
+                alt=""
+              />
+              <img
+                className="     hover:scale-110"
+                src="https://naveenterance.github.io/cv-old/images/pdo.jpg"
+                alt=""
+              />
+              <img className="  hover:scale-110 " src="pokemon.jpg" alt="" />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/code.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110"
+                src="https://naveenterance.github.io/cv-old/images/django.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/threshold.jpg"
+                alt=""
+              />
+              <img
+                className="  hover:scale-110 "
+                src="https://naveenterance.github.io/cv-old/images/Timed_form.jpg"
+                alt=""
+              />
+            </Masonry>
+          </ResponsiveMasonry>
         </div>
       </div>
     </>

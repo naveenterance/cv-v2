@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       <div class="grid grid-cols-12 gap-4">
         <div className="col-span-1">
-          <div className=" sticky top-12   w-max p-auto m-auto shadow-lg  bg-gray-300 shadow-gray-500 rounded-lg ">
+          <div className=" sticky top-12 animate__animated animate__fadeInDown  w-max py-4 m-auto shadow-lg  bg-gray-300 shadow-red-500 rounded-lg ">
             {view ? (
               <div
                 onClick={changeview}
@@ -49,7 +49,7 @@ const Sidebar = () => {
                       className="m-auto"
                       width="40"
                       height="40"
-                      src="https://avatars.githubusercontent.com/u/87982480?v=4"
+                      src="https://img.icons8.com/isometric/50/home.png"
                       alt=""
                     />
                     <div
@@ -122,7 +122,7 @@ const Sidebar = () => {
                     alt="day-and-night"
                   />
                 </div>
-                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
+                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300  w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
                   <img
                     className="m-auto"
                     width="40"

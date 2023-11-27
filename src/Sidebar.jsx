@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       <div class="grid grid-cols-12 gap-4">
         <div className="col-span-1">
-          <div className=" sticky top-12 animate__animated animate__fadeInDown  w-max py-4 m-auto shadow-lg  bg-gray-300 shadow-red-500 rounded-lg ">
+          <div className="floating-element sticky top-12 animate__animated animate__fadeInDown  w-max py-4 m-auto shadow-lg  bg-gray-300 shadow-red-500 rounded-lg ">
             {view ? (
               <div
                 onClick={changeview}

@@ -6,8 +6,8 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const Content = () => {
   return (
     <>
-      <div className="grid grid-cols-12 gap-1 animate__animated animate__fadeIn">
-        <div className="col-span-2  ">
+      <div className="xl:grid grid-cols-12 gap-1 animate__animated animate__fadeIn">
+        <div className="xl:col-span-2  ">
           <div className=" sticky top-12  w-max py-4 m-auto animate__animated animate__fadeInLeft ">
             <ul className="w-48 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg   ">
               <h3 className="mb-4  bg-gray-300 font-semibold text-white ">
@@ -83,7 +83,7 @@ const Content = () => {
             </ul>
           </div>
         </div>
-        <div className="col-span-8">
+        <div className="xl:col-span-8">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >
@@ -91,11 +91,6 @@ const Content = () => {
               className="m-4 animate__animated animate__fadeInUp"
               gutter="10px"
             >
-              <img
-                className="     hover:scale-110"
-                src="https://naveenterance.github.io/cv-old/images/pdo.jpg"
-                alt=""
-              />
               <img className="  hover:scale-110 " src="pokemon.jpg" alt="" />
               <img
                 className="  hover:scale-110 "

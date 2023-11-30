@@ -12,7 +12,7 @@ const Sidebar = () => {
     <>
       <div class="grid grid-cols-12 gap-4">
         <div className="col-span-1">
-          <div className="floating-element sticky top-12 animate__animated animate__fadeInDown  w-max py-4 m-auto shadow-lg  bg-gray-300 shadow-red-500 rounded-lg ">
+          <div className="floating-element sticky top-[20vh] animate__animated animate__fadeInDown  w-max py-4 m-auto shadow-lg  bg-gray-300 shadow-red-500 rounded-lg ">
             {view ? (
               <div
                 onClick={changeview}
@@ -57,7 +57,7 @@ const Sidebar = () => {
                       role="tooltip"
                       className="absolute invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
                     >
-                      Profileddd
+                      Home
                       <div className="tooltip-arrow" data-popper-arrow></div>
                     </div>
                   </div>
@@ -103,33 +103,6 @@ const Sidebar = () => {
                     Github
                     <div className="tooltip-arrow" data-popper-arrow></div>
                   </div>
-                </div>
-                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-                  <img
-                    className="m-auto"
-                    width="40"
-                    height="40"
-                    src="https://img.icons8.com/color/48/linkedin.png"
-                    alt="linkedin"
-                  />
-                </div>
-                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-                  <img
-                    className="m-auto"
-                    width="40"
-                    height="40"
-                    src="https://img.icons8.com/fluency/48/day-and-night.png"
-                    alt="day-and-night"
-                  />
-                </div>
-                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300  w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-                  <img
-                    className="m-auto"
-                    width="40"
-                    height="40"
-                    src="https://img.icons8.com/office/40/apple-contacts.png"
-                    alt="apple-contacts"
-                  />
                 </div>
               </div>
             )}

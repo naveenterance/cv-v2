@@ -16,8 +16,6 @@ export default function App() {
           <Route path="/" element={<Sidebar />}>
             <Route index element={<Profile />} />
             <Route path="Content" element={<Content />} />
-            {/* <Route path="contact" element={<Contact />} />
-              <Route path="*" element={<NoPage />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

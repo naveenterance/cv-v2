@@ -2,7 +2,6 @@
   z-index: 9999; /* or any higher value */
   /* any other necessary styles for the floating element */
 }
-
-.animate__animated.animate__rubberBand {
-  --animate-duration: 5s;
+.group:hover .group-hover\:block {
+  display: block;
 }

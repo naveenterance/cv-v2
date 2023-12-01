@@ -5,3 +5,8 @@
 .group:hover .group-hover\:block {
   display: block;
 }
+.hover-effect:hover {
+  /* Add your hover styles here */
+  animation: zoomIn;
+  animation-duration: 0.4s;
+}

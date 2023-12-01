@@ -93,7 +93,7 @@ const Sidebar = () => {
                       className="m-auto rounded-full"
                       width="40"
                       height="40"
-                      src="github.gif"
+                      src="https://img.icons8.com/color/48/info--v1.png"
                       alt="info"
                     />
                     <div
@@ -101,7 +101,7 @@ const Sidebar = () => {
                       role="tooltip"
                       className="absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
                     >
-                      Github
+                      Info
                       <div className="tooltip-arrow" data-popper-arrow></div>
                     </div>
                   </div>

@@ -84,26 +84,28 @@ const Sidebar = () => {
                     </div>
                   </div>
                 </Link>
-                <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
-                  <img
-                    data-tooltip-target="tooltip-github"
-                    data-tooltip-style="light"
-                    data-tooltip-placement="right"
-                    className="m-auto"
-                    width="40"
-                    height="40"
-                    src="https://img.icons8.com/color/48/github--v1.png"
-                    alt="info"
-                  />
-                  <div
-                    id="tooltip-github"
-                    role="tooltip"
-                    className="absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
-                  >
-                    Github
-                    <div className="tooltip-arrow" data-popper-arrow></div>
+                <Link to="/Info">
+                  <div className="relative m-2 animate__animated animate__fadeInDown rounded-full flex flex-col text-gray-700 bg-gray-300 shadow-lg shadow-gray-300 w-16 h-16 bg-clip-border hover:border-4 hover:border-amber-500">
+                    <img
+                      data-tooltip-target="tooltip-github"
+                      data-tooltip-style="light"
+                      data-tooltip-placement="right"
+                      className="m-auto rounded-full"
+                      width="40"
+                      height="40"
+                      src="github.gif"
+                      alt="info"
+                    />
+                    <div
+                      id="tooltip-github"
+                      role="tooltip"
+                      className="absolute z-50 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip"
+                    >
+                      Github
+                      <div className="tooltip-arrow" data-popper-arrow></div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             )}
           </div>

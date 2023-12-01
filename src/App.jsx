@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from "./Sidebar.jsx";
 import Content from "./Content.jsx";
 import Profile from "./Profile.jsx";
+import Info from "./Info.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" element={<Sidebar />}>
             <Route index element={<Profile />} />
             <Route path="Content" element={<Content />} />
+            <Route path="Info" element={<Info />} />
           </Route>
         </Routes>
       </BrowserRouter>
